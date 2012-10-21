@@ -39,7 +39,7 @@ public class Main extends JavaPlugin
 	
 	public void onEnable()
 	{
-		Bukkit.getLogger().log(Level.INFO, "\033[36m" + "--------------------------------------------------" + "\033[0m");
+		Bukkit.getLogger().log(Level.INFO, "\033[33m" + "--------------------------------------------------" + "\033[0m");
 		
 		if (getServer().getPluginManager().getPlugin("Spout") != null) {
 			
@@ -110,7 +110,7 @@ public class Main extends JavaPlugin
 			Bukkit.getLogger().log(Level.WARNING,"\033[31m" + "[AddSomeFurniture] Download Spout here: http://get.spout.org/" + "\033[0m");
 		}
 		
-		Bukkit.getLogger().log(Level.INFO, "\033[36m" + "--------------------------------------------------" + "\033[0m");
+		Bukkit.getLogger().log(Level.INFO, "\033[33m" + "--------------------------------------------------" + "\033[0m");
 	}
 	
 	private void updateCheck()

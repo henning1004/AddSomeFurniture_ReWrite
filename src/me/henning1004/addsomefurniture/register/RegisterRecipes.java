@@ -516,101 +516,101 @@ public class RegisterRecipes {
 		SpoutManager.getMaterialManager().registerSpoutRecipe(recipel);
 		//
 		//
-		reccarpetblack = new SpoutItemStack(RegisterBlocks.carpetblack, 6);
-		recipe = new SpoutShapedRecipe(reccarpetblack);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.blackWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetred = new SpoutItemStack(RegisterBlocks.carpetred, 6);
-		recipe = new SpoutShapedRecipe(reccarpetred);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.redWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetdarkgreen = new SpoutItemStack(RegisterBlocks.carpetdarkgreen, 6);
-		recipe = new SpoutShapedRecipe(reccarpetdarkgreen);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.greenWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetbrown = new SpoutItemStack(RegisterBlocks.carpetbrown, 6);
-		recipe = new SpoutShapedRecipe(reccarpetbrown);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.brownWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetblue = new SpoutItemStack(RegisterBlocks.carpetblue, 6);
-		recipe = new SpoutShapedRecipe(reccarpetblue);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.blueWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetpurple = new SpoutItemStack(RegisterBlocks.carpetpurple, 6);
-		recipe = new SpoutShapedRecipe(reccarpetpurple);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.purpleWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetcyan = new SpoutItemStack(RegisterBlocks.carpetcyan, 6);
-		recipe = new SpoutShapedRecipe(reccarpetcyan);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.cyanWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetlightgrey = new SpoutItemStack(RegisterBlocks.carpetlightgrey, 6);
-		recipe = new SpoutShapedRecipe(reccarpetlightgrey);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.lightGreyWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetgrey = new SpoutItemStack(RegisterBlocks.carpetgrey, 6);
-		recipe = new SpoutShapedRecipe(reccarpetgrey);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.greyWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetpink = new SpoutItemStack(RegisterBlocks.carpetpink, 6);
-		recipe = new SpoutShapedRecipe(reccarpetpink);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.pinkWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetlightgreen = new SpoutItemStack(RegisterBlocks.carpetlightgreen, 6);
-		recipe = new SpoutShapedRecipe(reccarpetlightgreen);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.limeWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetyellow = new SpoutItemStack(RegisterBlocks.carpetyellow, 6);
-		recipe = new SpoutShapedRecipe(reccarpetyellow);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.yellowWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetlightblue = new SpoutItemStack(RegisterBlocks.carpetlightblue, 6);
-		recipe = new SpoutShapedRecipe(reccarpetlightblue);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.lightBlueWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetmagenta = new SpoutItemStack(RegisterBlocks.carpetmagenta, 6);
-		recipe = new SpoutShapedRecipe(reccarpetmagenta);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.magentaWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetorange = new SpoutItemStack(RegisterBlocks.carpetorange, 6);
-		recipe = new SpoutShapedRecipe(reccarpetorange);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.orangeWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
-		
-		reccarpetwhite = new SpoutItemStack(RegisterBlocks.carpetwhite, 6);
-		recipe = new SpoutShapedRecipe(reccarpetwhite);
-		recipe.shape("AAA");
-		recipe.setIngredient('A', MaterialData.whiteWool);
-		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		reccarpetblack = new SpoutItemStack(RegisterBlocks.carpetblack, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetblack);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.blackWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetred = new SpoutItemStack(RegisterBlocks.carpetred, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetred);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.redWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetdarkgreen = new SpoutItemStack(RegisterBlocks.carpetdarkgreen, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetdarkgreen);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.greenWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetbrown = new SpoutItemStack(RegisterBlocks.carpetbrown, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetbrown);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.brownWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetblue = new SpoutItemStack(RegisterBlocks.carpetblue, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetblue);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.blueWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetpurple = new SpoutItemStack(RegisterBlocks.carpetpurple, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetpurple);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.purpleWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetcyan = new SpoutItemStack(RegisterBlocks.carpetcyan, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetcyan);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.cyanWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetlightgrey = new SpoutItemStack(RegisterBlocks.carpetlightgrey, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetlightgrey);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.lightGreyWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetgrey = new SpoutItemStack(RegisterBlocks.carpetgrey, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetgrey);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.greyWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetpink = new SpoutItemStack(RegisterBlocks.carpetpink, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetpink);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.pinkWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetlightgreen = new SpoutItemStack(RegisterBlocks.carpetlightgreen, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetlightgreen);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.limeWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetyellow = new SpoutItemStack(RegisterBlocks.carpetyellow, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetyellow);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.yellowWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetlightblue = new SpoutItemStack(RegisterBlocks.carpetlightblue, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetlightblue);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.lightBlueWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetmagenta = new SpoutItemStack(RegisterBlocks.carpetmagenta, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetmagenta);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.magentaWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetorange = new SpoutItemStack(RegisterBlocks.carpetorange, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetorange);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.orangeWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
+//		
+//		reccarpetwhite = new SpoutItemStack(RegisterBlocks.carpetwhite, 6);
+//		recipe = new SpoutShapedRecipe(reccarpetwhite);
+//		recipe.shape("AAA");
+//		recipe.setIngredient('A', MaterialData.whiteWool);
+//		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
 		
 	}
 }

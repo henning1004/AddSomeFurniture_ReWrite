@@ -9,7 +9,7 @@ import java.util.logging.Level;
 
 import me.henning1004.addsomefurniture.config.Configuration;
 import me.henning1004.addsomefurniture.listener.CraftListener;
-import me.henning1004.addsomefurniture.listener.FlowerboxListener;
+import me.henning1004.addsomefurniture.listener.BlockRotationListener;
 import me.henning1004.addsomefurniture.listener.LampListener;
 import me.henning1004.addsomefurniture.listener.Permissions;
 import me.henning1004.addsomefurniture.listener.PlaceListener;
@@ -67,7 +67,7 @@ public class Main extends JavaPlugin
 			getServer().getPluginManager().registerEvents(new WorktopListener(this), this);
 			getServer().getPluginManager().registerEvents(new QuestionListener(this), this);
 			getServer().getPluginManager().registerEvents(new TableListener(this), this);
-			getServer().getPluginManager().registerEvents(new FlowerboxListener(this), this);
+			getServer().getPluginManager().registerEvents(new BlockRotationListener(this), this);
 			getServer().getPluginManager().registerEvents(new LampListener(this), this);
 			getServer().getPluginManager().registerEvents(new CraftListener(this), this);
 			getServer().getPluginManager().registerEvents(new PlaceListener(this), this);

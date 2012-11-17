@@ -14,10 +14,6 @@ public class NeonLamp extends GenericCubeCustomBlock {
 	public NeonLamp(Main plugin,String name, int[] textureids) {
 		super(plugin, name, false, new GenericCubeBlockDesign(plugin, RegisterTextures.texOther, textureids));
 		this.setBlockDesign(new NeonLampDesign(plugin, textureids));
-		this.setBlockDesign(new NeonLampDesign(plugin, textureids).rotate(90), 1);
-		this.setBlockDesign(new NeonLampDesign(plugin, textureids).rotate(180), 2);
-		this.setBlockDesign(new NeonLampDesign(plugin, textureids).rotate(270), 3);
-		this.setRotate(true);
 		this.setHardness(4F);
 		this.plugin = plugin;
 	}

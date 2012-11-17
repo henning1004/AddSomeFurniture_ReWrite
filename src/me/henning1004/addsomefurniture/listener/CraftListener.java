@@ -113,15 +113,15 @@ public class CraftListener implements Listener {
 	        	}
 	        }
 	        
-	        if (Methods.isCarpetID(craftedItemID))
-	        {
-	        	if (player.hasPermission("asf.craft.carpet") || Configuration.confi.getString("NoPermissions").equals("true")){
-	        		return;}
-	        	else{
-	        		player.sendMessage(ChatColor.RED + "You are not allowed to craft carpets!");
-	                event.setCancelled(true);
-	        	}
-	        }
+//	        if (Methods.isCarpetID(craftedItemID))
+//	        {
+//	        	if (player.hasPermission("asf.craft.carpet") || Configuration.confi.getString("NoPermissions").equals("true")){
+//	        		return;}
+//	        	else{
+//	        		player.sendMessage(ChatColor.RED + "You are not allowed to craft carpets!");
+//	                event.setCancelled(true);
+//	        	}
+//	        }
 	        
 	        if (craftedItemID == RegisterBlocks.tv.getCustomId())
 	        {

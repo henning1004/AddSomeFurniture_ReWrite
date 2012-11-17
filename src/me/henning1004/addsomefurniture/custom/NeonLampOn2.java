@@ -8,13 +8,13 @@ import org.bukkit.Material;
 import org.getspout.spoutapi.block.design.GenericCubeBlockDesign;
 import org.getspout.spoutapi.material.block.GenericCubeCustomBlock;
 
-public class NeonLampOn extends GenericCubeCustomBlock {
+public class NeonLampOn2 extends GenericCubeCustomBlock {
 	@SuppressWarnings("unused")
 	private Main plugin;
 	
-	public NeonLampOn(Main plugin,String name, int[] textureids) {
+	public NeonLampOn2(Main plugin,String name, int[] textureids) {
 		super(plugin, name, Material.GLASS.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texOther, textureids));
-		this.setBlockDesign(new NeonLampDesign(plugin, textureids));
+		this.setBlockDesign(new NeonLampDesign(plugin, textureids).rotate(90));
 		this.setHardness(4F);
 		this.setLightLevel(15);
 		this.plugin = plugin;

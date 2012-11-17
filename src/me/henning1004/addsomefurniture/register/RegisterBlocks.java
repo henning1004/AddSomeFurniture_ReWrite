@@ -8,7 +8,9 @@ import me.henning1004.addsomefurniture.custom.FlowerBox;
 import me.henning1004.addsomefurniture.custom.Lamp;
 import me.henning1004.addsomefurniture.custom.LampOn;
 import me.henning1004.addsomefurniture.custom.NeonLamp;
+import me.henning1004.addsomefurniture.custom.NeonLamp2;
 import me.henning1004.addsomefurniture.custom.NeonLampOn;
+import me.henning1004.addsomefurniture.custom.NeonLampOn2;
 import me.henning1004.addsomefurniture.custom.PsychoChair;
 import me.henning1004.addsomefurniture.custom.PsychoTable;
 import me.henning1004.addsomefurniture.custom.PsychoThrone;
@@ -58,12 +60,20 @@ public class RegisterBlocks {
 	
 	public static NeonLamp neonlamp;
 	public static NeonLampOn neonlampon;
+	public static NeonLamp2 neonlamp2;
+	public static NeonLampOn2 neonlampon2;
 	public static NeonLamp neonlampred;
 	public static NeonLampOn neonlamponred;
+	public static NeonLamp2 neonlampred2;
+	public static NeonLampOn2 neonlamponred2;
 	public static NeonLamp neonlampblue;
 	public static NeonLampOn neonlamponblue;
+	public static NeonLamp2 neonlampblue2;
+	public static NeonLampOn2 neonlamponblue2;
 	public static NeonLamp neonlampgreen;
 	public static NeonLampOn neonlampongreen;
+	public static NeonLamp2 neonlampgreen2;
+	public static NeonLampOn2 neonlampongreen2;
 
 	public static Carpet carpetblack;
 	public static Carpet carpetred;
@@ -133,12 +143,20 @@ public class RegisterBlocks {
 		
 		neonlamp = new NeonLamp(plugin, "Neon Lamp", new int[]{32,33,0,0,0,0});
 		neonlampon = new NeonLampOn(plugin, "Neon Lamp.on", new int[]{32,33,0,0,0,0});
+		neonlamp2 = new NeonLamp2(plugin, "Neon Lamp.", new int[]{32,33,0,0,0,0});
+		neonlampon2 = new NeonLampOn2(plugin, "Neon Lamp.on.", new int[]{32,33,0,0,0,0});
 		neonlampred = new NeonLamp(plugin, "Red Neon Lamp", new int[]{36,37,0,0,0,0});
 		neonlamponred = new NeonLampOn(plugin, "Red Neon Lamp.on", new int[]{36,37,0,0,0,0});
+		neonlampred2 = new NeonLamp2(plugin, "Red Neon Lamp.", new int[]{36,37,0,0,0,0});
+		neonlamponred2 = new NeonLampOn2(plugin, "Red Neon Lamp.on.", new int[]{36,37,0,0,0,0});
 		neonlampblue = new NeonLamp(plugin, "Blue Neon Lamp", new int[]{38,39,0,0,0,0});
 		neonlamponblue = new NeonLampOn(plugin, "Blue Neon Lamp.on", new int[]{38,39,0,0,0,0});
+		neonlampblue2 = new NeonLamp2(plugin, "Blue Neon Lamp.", new int[]{38,39,0,0,0,0});
+		neonlamponblue2 = new NeonLampOn2(plugin, "Blue Neon Lamp.on.", new int[]{38,39,0,0,0,0});
 		neonlampgreen = new NeonLamp(plugin, "Green Neon Lamp", new int[]{34,35,0,0,0,0});
 		neonlampongreen = new NeonLampOn(plugin, "Green Neon Lamp.on", new int[]{34,35,0,0,0,0});
+		neonlampgreen2 = new NeonLamp2(plugin, "Green Neon Lamp.", new int[]{34,35,0,0,0,0});
+		neonlampongreen2 = new NeonLampOn2(plugin, "Green Neon Lamp.on.", new int[]{34,35,0,0,0,0});
 		
 //		carpetblack = new Carpet(plugin, "Black Carpet", new int[]{48,49,0,0,0,0});
 //		carpetred = new Carpet(plugin, "Red Carpet", new int[]{64,64,0,0,0,0});

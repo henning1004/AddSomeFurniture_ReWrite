@@ -191,4 +191,36 @@ public class Methods {
 				block.getCustomBlock() == RegisterBlocks.qmark )
 		{return true;} else {return false;}
 	}
+	
+	public static boolean isNeonlamp(SpoutBlock block) {
+		if (	block.getCustomBlock() == RegisterBlocks.neonlamp || 
+				block.getCustomBlock() == RegisterBlocks.neonlamp2 ||
+				block.getCustomBlock() == RegisterBlocks.neonlampon ||
+				block.getCustomBlock() == RegisterBlocks.neonlampon2 )
+		{return true;} else {return false;}
+	}
+	
+	public static boolean isNeonlampred(SpoutBlock block) {
+		if (	block.getCustomBlock() == RegisterBlocks.neonlampred || 
+				block.getCustomBlock() == RegisterBlocks.neonlampred2 ||
+				block.getCustomBlock() == RegisterBlocks.neonlamponred ||
+				block.getCustomBlock() == RegisterBlocks.neonlamponred2 )
+		{return true;} else {return false;}
+	}
+	
+	public static boolean isNeonlampgreen(SpoutBlock block) {
+		if (	block.getCustomBlock() == RegisterBlocks.neonlampgreen || 
+				block.getCustomBlock() == RegisterBlocks.neonlampgreen2 ||
+				block.getCustomBlock() == RegisterBlocks.neonlampongreen ||
+				block.getCustomBlock() == RegisterBlocks.neonlampongreen2 )
+		{return true;} else {return false;}
+	}
+	
+	public static boolean isNeonlampblue(SpoutBlock block) {
+		if (	block.getCustomBlock() == RegisterBlocks.neonlampblue || 
+				block.getCustomBlock() == RegisterBlocks.neonlampblue2 ||
+				block.getCustomBlock() == RegisterBlocks.neonlamponblue ||
+				block.getCustomBlock() == RegisterBlocks.neonlamponblue2 )
+		{return true;} else {return false;}
+	}
 }

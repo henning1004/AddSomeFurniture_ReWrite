@@ -58,25 +58,25 @@ public class Methods {
 		{return true;} else {return false;}
 	}
 	
-	public static boolean isCarpetID(short id) {
-		if (	id == RegisterBlocks.carpetblack.getCustomId() || 
-				id == RegisterBlocks.carpetblue.getCustomId() ||
-				id == RegisterBlocks.carpetbrown.getCustomId() ||
-				id == RegisterBlocks.carpetcyan.getCustomId() ||
-				id == RegisterBlocks.carpetdarkgreen.getCustomId() ||
-				id == RegisterBlocks.carpetgrey.getCustomId() ||
-				id == RegisterBlocks.carpetlightblue.getCustomId() ||
-				id == RegisterBlocks.carpetlightgreen.getCustomId() ||
-				id == RegisterBlocks.carpetlightgrey.getCustomId() ||
-				id == RegisterBlocks.carpetmagenta.getCustomId() ||
-				id == RegisterBlocks.carpetorange.getCustomId() ||
-				id == RegisterBlocks.carpetpink.getCustomId() ||
-				id == RegisterBlocks.carpetpurple.getCustomId() ||
-				id == RegisterBlocks.carpetred.getCustomId() ||
-				id == RegisterBlocks.carpetwhite.getCustomId() ||
-				id == RegisterBlocks.carpetyellow.getCustomId())
-		{return true;} else {return false;}
-	}
+//	public static boolean isCarpetID(short id) {
+//		if (	id == RegisterBlocks.carpetblack.getCustomId() || 
+//				id == RegisterBlocks.carpetblue.getCustomId() ||
+//				id == RegisterBlocks.carpetbrown.getCustomId() ||
+//				id == RegisterBlocks.carpetcyan.getCustomId() ||
+//				id == RegisterBlocks.carpetdarkgreen.getCustomId() ||
+//				id == RegisterBlocks.carpetgrey.getCustomId() ||
+//				id == RegisterBlocks.carpetlightblue.getCustomId() ||
+//				id == RegisterBlocks.carpetlightgreen.getCustomId() ||
+//				id == RegisterBlocks.carpetlightgrey.getCustomId() ||
+//				id == RegisterBlocks.carpetmagenta.getCustomId() ||
+//				id == RegisterBlocks.carpetorange.getCustomId() ||
+//				id == RegisterBlocks.carpetpink.getCustomId() ||
+//				id == RegisterBlocks.carpetpurple.getCustomId() ||
+//				id == RegisterBlocks.carpetred.getCustomId() ||
+//				id == RegisterBlocks.carpetwhite.getCustomId() ||
+//				id == RegisterBlocks.carpetyellow.getCustomId())
+//		{return true;} else {return false;}
+//	}
 	
 	public static boolean isLampID(short id) {
 		if (	id == RegisterBlocks.lamp.getCustomId() || 
@@ -88,7 +88,15 @@ public class Methods {
 				id == RegisterBlocks.neonlampgreen.getCustomId() ||
 				id == RegisterBlocks.neonlampongreen.getCustomId() ||
 				id == RegisterBlocks.neonlampred.getCustomId() ||
-				id == RegisterBlocks.neonlamponred.getCustomId())
+				id == RegisterBlocks.neonlamponred.getCustomId() ||
+				id == RegisterBlocks.neonlamp2.getCustomId() || 
+				id == RegisterBlocks.neonlampon2.getCustomId() ||
+				id == RegisterBlocks.neonlampblue2.getCustomId() || 
+				id == RegisterBlocks.neonlamponblue2.getCustomId() || 
+				id == RegisterBlocks.neonlampgreen2.getCustomId() ||
+				id == RegisterBlocks.neonlampongreen2.getCustomId() ||
+				id == RegisterBlocks.neonlampred2.getCustomId() ||
+				id == RegisterBlocks.neonlamponred2.getCustomId())
 		{return true;} else {return false;}
 	}
 	
@@ -182,7 +190,15 @@ public class Methods {
 				block.getCustomBlock() == RegisterBlocks.neonlampgreen ||
 				block.getCustomBlock() == RegisterBlocks.neonlampongreen ||
 				block.getCustomBlock() == RegisterBlocks.neonlampred ||
-				block.getCustomBlock() == RegisterBlocks.neonlamponred)
+				block.getCustomBlock() == RegisterBlocks.neonlamponred ||
+				block.getCustomBlock() == RegisterBlocks.neonlamp2 || 
+				block.getCustomBlock() == RegisterBlocks.neonlampon2 ||
+				block.getCustomBlock() == RegisterBlocks.neonlampblue2 || 
+				block.getCustomBlock() == RegisterBlocks.neonlamponblue2 || 
+				block.getCustomBlock() == RegisterBlocks.neonlampgreen2 ||
+				block.getCustomBlock() == RegisterBlocks.neonlampongreen2 ||
+				block.getCustomBlock() == RegisterBlocks.neonlampred2 ||
+				block.getCustomBlock() == RegisterBlocks.neonlamponred2)
 		{return true;} else {return false;}
 	}
 	

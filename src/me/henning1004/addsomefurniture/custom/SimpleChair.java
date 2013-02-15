@@ -4,6 +4,7 @@ import me.henning1004.addsomefurniture.Main;
 import me.henning1004.addsomefurniture.design.SimpleChairDesign;
 import me.henning1004.addsomefurniture.register.RegisterTextures;
 
+import org.bukkit.Material;
 import org.getspout.spoutapi.block.design.GenericCubeBlockDesign;
 import org.getspout.spoutapi.material.block.GenericCubeCustomBlock;
 
@@ -12,7 +13,7 @@ public class SimpleChair extends GenericCubeCustomBlock {
 	private Main plugin;
 	
 	public SimpleChair(Main plugin,String name, int[] textureids) {
-		super(plugin, name, false, new GenericCubeBlockDesign(plugin, RegisterTextures.texChair,textureids));
+		super(plugin, name, Material.SANDSTONE_STAIRS.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texChair,textureids));
 		this.setBlockDesign(new SimpleChairDesign(plugin, textureids));
 		this.setBlockDesign(new SimpleChairDesign(plugin, textureids).rotate(90), 1);
 		this.setBlockDesign(new SimpleChairDesign(plugin, textureids).rotate(180), 2);

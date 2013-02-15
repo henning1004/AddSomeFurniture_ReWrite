@@ -13,7 +13,7 @@ public class Flower extends GenericCubeCustomBlock {
 	private Main plugin;
 	
 	public Flower(Main plugin,String name, int[] textureids) {
-		super(plugin, name, Material.STEP.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texOther, textureids));
+		super(plugin, name, Material.WEB.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texOther, textureids));
 		this.setBlockDesign(new FlowerDesign(plugin, textureids));
 		this.setHardness(1F);
 		this.plugin = plugin;

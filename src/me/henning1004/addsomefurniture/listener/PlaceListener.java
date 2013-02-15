@@ -93,17 +93,17 @@ public class PlaceListener implements Listener {
 	        	}
 	        }
 	        
-	        if (Methods.isCarpet(block))
-	        {
-	        	if (player.hasPermission("asf.place.carpet") || Configuration.confi.getString("NoPermissions").equals("true")){
-	        		return;}
-	        	else{
-	        		player.sendMessage(ChatColor.RED + "You are not allowed to place carpets!");
-	                event.setCancelled(true);
-	        	}
-	        }
+//	        if (Methods.isCarpet(block))
+//	        {
+//	        	if (player.hasPermission("asf.place.carpet") || Configuration.confi.getString("NoPermissions").equals("true")){
+//	        		return;}
+//	        	else{
+//	        		player.sendMessage(ChatColor.RED + "You are not allowed to place carpets!");
+//	                event.setCancelled(true);
+//	        	}
+//	        }
 	        
-	        if (block == RegisterBlocks.tv)
+	        if (block.getCustomBlock() == RegisterBlocks.tv)
 	        {
 	        	if (player.hasPermission("asf.place.tv") || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		return;}
@@ -113,7 +113,7 @@ public class PlaceListener implements Listener {
 	        	}
 	        }
 	        
-	        if (block == RegisterBlocks.qmark)
+	        if (block.getCustomBlock() == RegisterBlocks.qmark)
 	        {
 	        	if (player.hasPermission("asf.place.qmark") || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		return;}

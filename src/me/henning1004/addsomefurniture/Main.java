@@ -107,7 +107,7 @@ public class Main extends JavaPlugin
 		}	
 		else {
 			Bukkit.getLogger().log(Level.WARNING,"\033[31m" + "[AddSomeFurniture] Spoutplugin not found, can´t load AddSomeFurniture!" + "\033[0m");
-			Bukkit.getLogger().log(Level.WARNING,"\033[31m" + "[AddSomeFurniture] Download Spout here: http://get.spout.org/" + "\033[0m");
+			Bukkit.getLogger().log(Level.WARNING,"\033[31m" + "[AddSomeFurniture] Please install Spout" + "\033[0m");
 		}
 		
 		Bukkit.getLogger().log(Level.INFO, "\033[33m" + "--------------------------------------------------" + "\033[0m");

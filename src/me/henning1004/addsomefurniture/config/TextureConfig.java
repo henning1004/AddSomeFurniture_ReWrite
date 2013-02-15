@@ -9,8 +9,6 @@ public class TextureConfig
 
     public static void set()
     {
-    	if(!Configuration.texture.contains("INFORMATION"))
-            Configuration.texture.set("INFORMATION", "!# This is the new texture config file. You can delete the old one ;) #!");
     	if(!Configuration.texture.contains("Table Texture"))
             Configuration.texture.set("Table Texture", "https://dl.dropbox.com/u/62050717/AddSomeFurniture/Textures/text_table.png");
         if(!Configuration.texture.contains("Chair Texture"))

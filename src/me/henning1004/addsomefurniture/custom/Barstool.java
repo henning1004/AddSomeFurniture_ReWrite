@@ -9,6 +9,7 @@ import org.getspout.spoutapi.block.design.GenericCubeBlockDesign;
 import org.getspout.spoutapi.material.block.GenericCubeCustomBlock;
 
 
+
 public class Barstool extends GenericCubeCustomBlock {
 	
 	@SuppressWarnings("unused")

@@ -119,7 +119,7 @@ public class Main extends JavaPlugin
         try
         {
         	
-        	URLConnection txt = (new URL("https://dl.dropbox.com/u/62050717/AddSomeFurniture/latestVersion.TXT")).openConnection();
+        	URLConnection txt = (new URL("https://dl.dropbox.com/u/62050717/AddSomeFurniture/latestVersion.txt")).openConnection();
             BufferedReader in = new BufferedReader(new InputStreamReader(txt.getInputStream()));
             String latestVersion = in.readLine();
             int this_pluginversion = Integer.parseInt(getDescription().getVersion().replace(".", ""));
@@ -152,7 +152,7 @@ public class Main extends JavaPlugin
     		try
             {
     			
-    			URLConnection txt = (new URL("https://dl.dropbox.com/u/62050717/AddSomeFurniture/latestVersion.TXT")).openConnection();
+    			URLConnection txt = (new URL("https://dl.dropbox.com/u/62050717/AddSomeFurniture/latestVersion.txt")).openConnection();
                 BufferedReader in = new BufferedReader(new InputStreamReader(txt.getInputStream()));
                 String latestVersion = in.readLine();
                 int this_pluginversion = Integer.parseInt(getDescription().getVersion().replace(".", ""));

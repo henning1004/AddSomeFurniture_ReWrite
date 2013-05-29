@@ -36,7 +36,7 @@ public class PlaceListener implements Listener {
 	        if (Methods.isTable(block))
 	        {
 	        	if (player.hasPermission("asf.place.table") || Configuration.confi.getString("NoPermissions").equals("true")){
-	        		return;}
+	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place tables!");
 	                event.setCancelled(true);
@@ -46,7 +46,7 @@ public class PlaceListener implements Listener {
 	        if (Methods.isChair(block))
 	        {
 	        	if (player.hasPermission("asf.place.chair") || Configuration.confi.getString("NoPermissions").equals("true")){
-	        		return;}
+	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place chairs!");
 	                event.setCancelled(true);
@@ -56,7 +56,7 @@ public class PlaceListener implements Listener {
 	        if (Methods.isThrone(block))
 	        {
 	        	if (player.hasPermission("asf.place.throne") || Configuration.confi.getString("NoPermissions").equals("true")){
-	        		return;}
+	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place thrones!");
 	                event.setCancelled(true);
@@ -66,7 +66,7 @@ public class PlaceListener implements Listener {
 	        if (Methods.isWorktop(block))
 	        {
 	        	if (player.hasPermission("asf.place.worktop") || Configuration.confi.getString("NoPermissions").equals("true")){
-	        		return;}
+	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place worktops!");
 	                event.setCancelled(true);
@@ -76,7 +76,7 @@ public class PlaceListener implements Listener {
 	        if (Methods.isFlowerbox(block) || Methods.isFlower(block))
 	        {
 	        	if (player.hasPermission("asf.place.flower") || Configuration.confi.getString("NoPermissions").equals("true")){
-	        		return;}
+	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place flowers!");
 	                event.setCancelled(true);
@@ -86,7 +86,7 @@ public class PlaceListener implements Listener {
 	        if (Methods.isLamp(block))
 	        {
 	        	if (player.hasPermission("asf.place.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
-	        		return;}
+	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place lamps!");
 	                event.setCancelled(true);
@@ -106,7 +106,7 @@ public class PlaceListener implements Listener {
 	        if (block.getCustomBlock() == RegisterBlocks.tv)
 	        {
 	        	if (player.hasPermission("asf.place.tv") || Configuration.confi.getString("NoPermissions").equals("true")){
-	        		return;}
+	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place the tv!");
 	                event.setCancelled(true);
@@ -116,7 +116,7 @@ public class PlaceListener implements Listener {
 	        if (block.getCustomBlock() == RegisterBlocks.qmark)
 	        {
 	        	if (player.hasPermission("asf.place.qmark") || Configuration.confi.getString("NoPermissions").equals("true")){
-	        		return;}
+	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place the question mark!");
 	                event.setCancelled(true);

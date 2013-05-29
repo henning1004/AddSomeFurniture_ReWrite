@@ -11,7 +11,6 @@ import me.henning1004.addsomefurniture.config.Configuration;
 import me.henning1004.addsomefurniture.listener.CraftListener;
 import me.henning1004.addsomefurniture.listener.BlockRotationListener;
 import me.henning1004.addsomefurniture.listener.LampListener;
-import me.henning1004.addsomefurniture.listener.Permissions;
 import me.henning1004.addsomefurniture.listener.PlaceListener;
 import me.henning1004.addsomefurniture.listener.QuestionListener;
 import me.henning1004.addsomefurniture.listener.TableListener;
@@ -77,21 +76,7 @@ public class Main extends JavaPlugin
 	        	Bukkit.getLogger().log(Level.INFO,"\033[31m" + "[AddSomeFurniture] Permissions disabled" + "\033[0m");
 	    	}
 	        else{
-	            Bukkit.getLogger().log(Level.INFO,"\033[36m" + "[AddSomeFurniture] Hooking into Vault..." + "\033[0m");
-	            
-	            if(getServer().getPluginManager().getPlugin("Vault") != null) {
-	            	
-	            	if(!Permissions.setupPermissions(this)) {
-	                	Bukkit.getLogger().log(Level.WARNING,"\033[31m" + "[AddSomeFurniture] Can't find an permissions plugin." + "\033[0m");
-	                	getServer().getPluginManager().disablePlugin(this);
-	                }
-	            	else {
-	                	Bukkit.getLogger().log(Level.INFO,"\033[36m" +  "[AddSomeFurniture] Connected to permissions plugin via Vault!" + "\033[0m");
-	            	}
-	            }
-	            else {
-	            	Bukkit.getLogger().log(Level.WARNING,"\033[31m" + "[AddSomeFurniture] Vault plugin not found." + "\033[0m");
-	            }
+	        	Bukkit.getLogger().log(Level.INFO,"\033[36m" + "[AddSomeFurniture] Permissions enabled" + "\033[0m");
 	        }
 			
 			if (Configuration.confi.getString("CheckForUpdates").equals("true")){

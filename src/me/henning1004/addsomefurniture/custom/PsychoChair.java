@@ -13,6 +13,7 @@ public class PsychoChair extends GenericCubeCustomBlock
 	@SuppressWarnings("unused")
 	private Main plugin;
 	
+	@SuppressWarnings("deprecation")
 	public PsychoChair(Main plugin,String name, int[] textureids) {
 		super(plugin, name, Material.WOOD_STAIRS.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texChair,textureids));
 		this.setBlockDesign(new PsychoChairDesign(plugin, textureids));

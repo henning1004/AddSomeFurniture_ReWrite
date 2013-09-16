@@ -12,6 +12,7 @@ public class PsychoTable extends GenericCubeCustomBlock {
 	@SuppressWarnings("unused")
 	private Main plugin;
 	
+	@SuppressWarnings("deprecation")
 	public PsychoTable(Main plugin, String name, int[] textureids)
 	{
 		super(plugin, name, Material.PISTON_BASE.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texTable,textureids));

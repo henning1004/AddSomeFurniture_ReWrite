@@ -23,6 +23,7 @@ public class QuestionListener implements Listener
 	{
 	}
 	
+	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void onMarkClicked(PlayerInteractEvent event)
 	{

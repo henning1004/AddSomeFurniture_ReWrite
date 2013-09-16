@@ -12,6 +12,7 @@ public class Tv extends GenericCubeCustomBlock {
 	@SuppressWarnings("unused")
 	private Main plugin;
 	
+	@SuppressWarnings("deprecation")
 	public Tv(Main plugin,String name, int[] textureids) {
 		super(plugin, name, Material.CAULDRON.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texOther, textureids));
 		this.setBlockDesign(new TvDesign(plugin, textureids));

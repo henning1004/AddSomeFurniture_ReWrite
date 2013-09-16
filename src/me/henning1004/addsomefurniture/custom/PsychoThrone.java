@@ -12,6 +12,7 @@ public class PsychoThrone extends GenericCubeCustomBlock {
 	@SuppressWarnings("unused")
 	private Main plugin;
 	
+	@SuppressWarnings("deprecation")
 	public PsychoThrone(Main plugin,String name, int[] textureids) {
 		super(plugin, name, Material.SMOOTH_STAIRS.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texThrone, textureids));
 		this.setBlockDesign(new PsychoThroneDesign(plugin, textureids));

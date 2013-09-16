@@ -12,6 +12,7 @@ public class Worktop extends GenericCubeCustomBlock {
 	@SuppressWarnings("unused")
 	private Main plugin;
 	
+	@SuppressWarnings("deprecation")
 	public Worktop(Main plugin,String name, int[] textureids) {
 		super(plugin, name, Material.STEP.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texWorktop, textureids));
 		this.setBlockDesign(new WorktopDesign(plugin, textureids));

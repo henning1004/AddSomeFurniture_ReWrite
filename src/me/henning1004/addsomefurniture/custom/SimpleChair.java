@@ -12,6 +12,7 @@ public class SimpleChair extends GenericCubeCustomBlock {
 	@SuppressWarnings("unused")
 	private Main plugin;
 	
+	@SuppressWarnings("deprecation")
 	public SimpleChair(Main plugin,String name, int[] textureids) {
 		super(plugin, name, Material.SANDSTONE_STAIRS.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texChair,textureids));
 		this.setBlockDesign(new SimpleChairDesign(plugin, textureids));

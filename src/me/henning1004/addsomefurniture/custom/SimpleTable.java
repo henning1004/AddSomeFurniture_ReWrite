@@ -12,6 +12,7 @@ public class SimpleTable extends GenericCubeCustomBlock {
 	@SuppressWarnings("unused")
 	private Main plugin;
 	
+	@SuppressWarnings("deprecation")
 	public SimpleTable(Main plugin,String name, int[] textureids) {
 		super(plugin, name, Material.FENCE.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texTable,textureids));
 		this.setBlockDesign(new SimpleTableDesign(plugin, textureids));

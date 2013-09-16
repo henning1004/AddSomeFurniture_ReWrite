@@ -42,7 +42,7 @@ public class RegisterTextures {
 		texThrone = new Texture(plugin, Configuration.texture.getString("Throne Texture"), 256, 256, 16);
 		texWorktop = new Texture(plugin, Configuration.texture.getString("Worktop Texture"), 256, 256, 16);
 		texOther = new Texture(plugin, Configuration.texture.getString("Other Texture"), 256, 256, 16);
-		texCarpet = new Texture(plugin, Configuration.texture.getString("Carpet Texture"), 256, 256, 16);
+		//texCarpet = new Texture(plugin, Configuration.texture.getString("Carpet Texture"), 256, 256, 16);
 		Bukkit.getLogger().log(Level.INFO, "\033[36m" + "[AddSomeFurniture] Normal Textures loaded!" + "\033[0m");	
 	}
 	
@@ -52,7 +52,7 @@ public class RegisterTextures {
 		texThrone = new Texture(plugin, Configuration.textureHD.getString("Throne HD Texture"), 1024, 1024, 64);
 		texWorktop = new Texture(plugin, Configuration.textureHD.getString("Worktop HD Texture"), 1024, 1024, 64);
 		texOther = new Texture(plugin, Configuration.textureHD.getString("Other HD Texture"), 1024, 1024, 64);
-		texCarpet = new Texture(plugin, Configuration.textureHD.getString("Carpet HD Texture"), 1024, 1024, 64);	
+		//texCarpet = new Texture(plugin, Configuration.textureHD.getString("Carpet HD Texture"), 1024, 1024, 64);	
 		Bukkit.getLogger().log(Level.INFO,"\033[36m" + "[AddSomeFurniture] HD Textures loaded!" + "\033[0m");
 	}
 }

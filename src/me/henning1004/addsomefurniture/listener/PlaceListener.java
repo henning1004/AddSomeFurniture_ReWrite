@@ -72,7 +72,7 @@ public class PlaceListener implements Listener {
 	                event.setCancelled(true);
 	        	}
 	        }
-	        
+	        /*
 	        if (Methods.isFlowerbox(block) || Methods.isFlower(block))
 	        {
 	        	if (player.hasPermission("asf.place.flower") || Configuration.confi.getString("NoPermissions").equals("true")){
@@ -82,7 +82,7 @@ public class PlaceListener implements Listener {
 	                event.setCancelled(true);
 	        	}
 	        }
-	        
+	        */
 	        if (Methods.isLamp(block))
 	        {
 	        	if (player.hasPermission("asf.place.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
@@ -92,17 +92,17 @@ public class PlaceListener implements Listener {
 	                event.setCancelled(true);
 	        	}
 	        }
-	        
-//	        if (Methods.isCarpet(block))
-//	        {
-//	        	if (player.hasPermission("asf.place.carpet") || Configuration.confi.getString("NoPermissions").equals("true")){
-//	        		return;}
-//	        	else{
-//	        		player.sendMessage(ChatColor.RED + "You are not allowed to place carpets!");
-//	                event.setCancelled(true);
-//	        	}
-//	        }
-	        
+	        /*
+	        if (Methods.isCarpet(block))
+	        {
+	        	if (player.hasPermission("asf.place.carpet") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        		return;}
+	        	else{
+	        		player.sendMessage(ChatColor.RED + "You are not allowed to place carpets!");
+	                event.setCancelled(true);
+	        	}
+	        }
+	        */
 	        if (block.getCustomBlock() == RegisterBlocks.tv)
 	        {
 	        	if (player.hasPermission("asf.place.tv") || Configuration.confi.getString("NoPermissions").equals("true")){

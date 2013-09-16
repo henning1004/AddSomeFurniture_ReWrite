@@ -56,6 +56,7 @@ public class CarpetDesign extends GenericBlockDesign
 		
 
 		setQuad(unten).setQuad(oben).setQuad(tops1).setQuad(tops2).setQuad(tops3).setQuad(tops4);
+		
 	}
 }
-	
+

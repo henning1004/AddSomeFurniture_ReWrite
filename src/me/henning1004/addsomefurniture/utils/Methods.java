@@ -127,34 +127,7 @@ public class Methods {
 				block.getCustomBlock() == RegisterBlocks.flowerbox1S )
 		{return true;} else {return false;}
 	}
-	/*
-	public static boolean isFlower(SpoutBlock block) {
-		if (	block.getCustomBlock() == RegisterBlocks.blueflower || 
-				block.getCustomBlock() == RegisterBlocks.whiterose )
-		{return true;} else {return false;}
-	}
-	*/
-	/*
-	public static boolean isCarpet(SpoutBlock block) {
-		if (	block.getCustomBlock() == RegisterBlocks.carpetblack || 
-				block.getCustomBlock() == RegisterBlocks.carpetblue ||
-				block.getCustomBlock() == RegisterBlocks.carpetbrown ||
-				block.getCustomBlock() == RegisterBlocks.carpetcyan ||
-				block.getCustomBlock() == RegisterBlocks.carpetdarkgreen ||
-				block.getCustomBlock() == RegisterBlocks.carpetgrey ||
-				block.getCustomBlock() == RegisterBlocks.carpetlightblue ||
-				block.getCustomBlock() == RegisterBlocks.carpetlightgreen ||
-				block.getCustomBlock() == RegisterBlocks.carpetlightgrey ||
-				block.getCustomBlock() == RegisterBlocks.carpetmagenta ||
-				block.getCustomBlock() == RegisterBlocks.carpetorange ||
-				block.getCustomBlock() == RegisterBlocks.carpetpink ||
-				block.getCustomBlock() == RegisterBlocks.carpetpurple ||
-				block.getCustomBlock() == RegisterBlocks.carpetred ||
-				block.getCustomBlock() == RegisterBlocks.carpetwhite ||
-				block.getCustomBlock() == RegisterBlocks.carpetyellow)
-		{return true;} else {return false;}
-	}
-	*/
+	
 	public static boolean isLamp(SpoutBlock block) {
 		if (	block.getCustomBlock() == RegisterBlocks.lamp || 
 				block.getCustomBlock() == RegisterBlocks.lampon ||

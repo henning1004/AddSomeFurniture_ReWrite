@@ -16,7 +16,6 @@ public class RegisterTextures {
 	public static Texture texThrone;
 	public static Texture texWorktop;
 	public static Texture texOther;
-	public static Texture texCarpet;
 	
 	public static void precache(Main plugin) {
 		SpoutManager.getFileManager().addToPreLoginCache(plugin, Configuration.texture.getString("Table Texture"));
@@ -24,7 +23,6 @@ public class RegisterTextures {
 		SpoutManager.getFileManager().addToPreLoginCache(plugin, Configuration.texture.getString("Throne Texture"));
 		SpoutManager.getFileManager().addToPreLoginCache(plugin, Configuration.texture.getString("Worktop Texture"));
 		SpoutManager.getFileManager().addToPreLoginCache(plugin, Configuration.texture.getString("Other Texture"));
-		SpoutManager.getFileManager().addToPreLoginCache(plugin, Configuration.texture.getString("Carpet Texture"));
 	}
 	
 	public static void precacheHD(Main plugin) {
@@ -33,7 +31,6 @@ public class RegisterTextures {
 		SpoutManager.getFileManager().addToPreLoginCache(plugin, Configuration.textureHD.getString("Throne HD Texture"));
 		SpoutManager.getFileManager().addToPreLoginCache(plugin, Configuration.textureHD.getString("Worktop HD Texture"));
 		SpoutManager.getFileManager().addToPreLoginCache(plugin, Configuration.textureHD.getString("Other HD Texture"));
-		SpoutManager.getFileManager().addToPreLoginCache(plugin, Configuration.textureHD.getString("Carpet HD Texture"));
 	}
 			
 	public static void loadtextures(Main plugin) {
@@ -42,7 +39,6 @@ public class RegisterTextures {
 		texThrone = new Texture(plugin, Configuration.texture.getString("Throne Texture"), 256, 256, 16);
 		texWorktop = new Texture(plugin, Configuration.texture.getString("Worktop Texture"), 256, 256, 16);
 		texOther = new Texture(plugin, Configuration.texture.getString("Other Texture"), 256, 256, 16);
-		//texCarpet = new Texture(plugin, Configuration.texture.getString("Carpet Texture"), 256, 256, 16);
 		Bukkit.getLogger().log(Level.INFO, "\033[36m" + "[AddSomeFurniture] Normal Textures loaded!" + "\033[0m");	
 	}
 	
@@ -52,7 +48,6 @@ public class RegisterTextures {
 		texThrone = new Texture(plugin, Configuration.textureHD.getString("Throne HD Texture"), 1024, 1024, 64);
 		texWorktop = new Texture(plugin, Configuration.textureHD.getString("Worktop HD Texture"), 1024, 1024, 64);
 		texOther = new Texture(plugin, Configuration.textureHD.getString("Other HD Texture"), 1024, 1024, 64);
-		//texCarpet = new Texture(plugin, Configuration.textureHD.getString("Carpet HD Texture"), 1024, 1024, 64);	
 		Bukkit.getLogger().log(Level.INFO,"\033[36m" + "[AddSomeFurniture] HD Textures loaded!" + "\033[0m");
 	}
 }

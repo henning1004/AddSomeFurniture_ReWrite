@@ -20,8 +20,5 @@ public class HDTextureConfig
             Configuration.textureHD.set("Worktop HD Texture", "https://dl.dropbox.com/u/62050717/AddSomeFurniture/HD%20Textures/text_worktop_HD.png");
         if(!Configuration.textureHD.contains("Other HD Texture"))
             Configuration.textureHD.set("Other HD Texture", "https://dl.dropbox.com/u/62050717/AddSomeFurniture/HD%20Textures/text_other_HD.png");
-        if(!Configuration.textureHD.contains("Carpet HD Texture (unused)"))
-            Configuration.textureHD.set("Carpet HD Texture", "https://dl.dropbox.com/u/62050717/AddSomeFurniture/HD%20Textures/text_carpet_HD.png");
-       
     }
 }

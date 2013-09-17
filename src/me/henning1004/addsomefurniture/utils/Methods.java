@@ -51,34 +51,7 @@ public class Methods {
 				id == RegisterBlocks.flowerbox1S.getCustomId() )
 		{return true;} else {return false;}
 	}
-	/*
-	public static boolean isFlowerID(short id) {
-		if (	id == RegisterBlocks.blueflower.getCustomId() || 
-				id == RegisterBlocks.whiterose.getCustomId() )
-		{return true;} else {return false;}
-	}
-	*/
-	/*
-	public static boolean isCarpetID(short id) {
-		if (	id == RegisterBlocks.carpetblack.getCustomId() || 
-				id == RegisterBlocks.carpetblue.getCustomId() ||
-				id == RegisterBlocks.carpetbrown.getCustomId() ||
-				id == RegisterBlocks.carpetcyan.getCustomId() ||
-				id == RegisterBlocks.carpetdarkgreen.getCustomId() ||
-				id == RegisterBlocks.carpetgrey.getCustomId() ||
-				id == RegisterBlocks.carpetlightblue.getCustomId() ||
-				id == RegisterBlocks.carpetlightgreen.getCustomId() ||
-				id == RegisterBlocks.carpetlightgrey.getCustomId() ||
-				id == RegisterBlocks.carpetmagenta.getCustomId() ||
-				id == RegisterBlocks.carpetorange.getCustomId() ||
-				id == RegisterBlocks.carpetpink.getCustomId() ||
-				id == RegisterBlocks.carpetpurple.getCustomId() ||
-				id == RegisterBlocks.carpetred.getCustomId() ||
-				id == RegisterBlocks.carpetwhite.getCustomId() ||
-				id == RegisterBlocks.carpetyellow.getCustomId())
-		{return true;} else {return false;}
-	}
-	*/
+	
 	public static boolean isLampID(short id) {
 		if (	id == RegisterBlocks.lamp.getCustomId() || 
 				id == RegisterBlocks.lampon.getCustomId() ||

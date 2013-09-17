@@ -19,7 +19,5 @@ public class TextureConfig
             Configuration.texture.set("Worktop Texture", "https://dl.dropbox.com/u/62050717/AddSomeFurniture/Textures/text_worktop.png");
         if(!Configuration.texture.contains("Other Texture"))
             Configuration.texture.set("Other Texture", "https://dl.dropbox.com/u/62050717/AddSomeFurniture/Textures/text_other.png");
-        if(!Configuration.texture.contains("Carpet Texture (unused)"))
-            Configuration.texture.set("Carpet Texture", "https://dl.dropbox.com/u/62050717/AddSomeFurniture/Textures/text_carpet.png");
-    }
+       }
 }

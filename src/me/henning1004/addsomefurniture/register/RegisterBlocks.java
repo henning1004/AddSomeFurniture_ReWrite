@@ -2,8 +2,6 @@ package me.henning1004.addsomefurniture.register;
 
 import me.henning1004.addsomefurniture.Main;
 import me.henning1004.addsomefurniture.custom.Barstool;
-//import me.henning1004.addsomefurniture.custom.Carpet;
-//import me.henning1004.addsomefurniture.custom.Flower;
 import me.henning1004.addsomefurniture.custom.FlowerBox;
 import me.henning1004.addsomefurniture.custom.Lamp;
 import me.henning1004.addsomefurniture.custom.LampOn;
@@ -81,6 +79,7 @@ public class RegisterBlocks {
 	public static FlowerBox flowerbox1E;
 	
 	public static QuestionMark qmark;
+
 	
 
 	public static void registerBlocks (Main plugin) {

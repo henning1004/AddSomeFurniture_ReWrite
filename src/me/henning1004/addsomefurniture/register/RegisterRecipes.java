@@ -30,7 +30,7 @@ public class RegisterRecipes {
     public static ItemStack recwoodthrone;
     public static ItemStack recironthrone;
     public static ItemStack recgoldthrone;
-     public static ItemStack recleatherthrone;
+    public static ItemStack recleatherthrone;
      
     public static ItemStack recwoodenbarstool;
     public static ItemStack recstonebarstool;
@@ -429,7 +429,7 @@ public class RegisterRecipes {
 		recipe.shape("AB", "CC");
 		recipe.setIngredient('A', MaterialData.rose);
 		recipe.setIngredient('B', MaterialData.dandelion);
-		recipe.setIngredient('C', MaterialData.clayBrick);
+		recipe.setIngredient('C', MaterialData.flowerpotitem);
 		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
 		//
 		//

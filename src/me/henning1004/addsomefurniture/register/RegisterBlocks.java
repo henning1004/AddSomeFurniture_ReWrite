@@ -105,7 +105,7 @@ public class RegisterBlocks {
 		woodenbarstool = new Barstool(plugin, "WoodenBarstool", new int[]{0,1,2,0,0,0});
 		stonebarstool = new Barstool(plugin, "StoneBarstool", new int[]{48,49,50,0,0,0});
 		
-		woodsimpletable = new SimpleTable(plugin, "Simple WoodTable", new int[] {0,0,0,0,0,0});
+		woodsimpletable = new SimpleTable(plugin, "Simple WoodTable", new int[] {0,2,2,0,0,0});
 		stonesimpletable = new SimpleTable(plugin, "Simple StoneTable", new int[] {48,49,50,0,0,0});
 		
 		craftingworktop = new Worktop(plugin, "CraftingWorktop", new int[]{0,1,0,0,0,0});

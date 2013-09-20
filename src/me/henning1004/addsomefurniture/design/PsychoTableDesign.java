@@ -12,7 +12,7 @@ public class PsychoTableDesign extends GenericBlockDesign
 	public PsychoTableDesign(Main plugin, int[] textureids){
 		
 		texture = RegisterTextures.texTable;
-		setBoundingBox(0,0,0,1,1,1).setQuadNumber(22);
+		setBoundingBox(0F,0F,0F,1F,1F,1F).setQuadNumber(22);
 		setTexture(plugin, texture.getTexture()).setMinBrightness(1F).setMaxBrightness(1F);
 		SubTexture subTex = texture.getSubTexture(textureids[0]);
 		SubTexture subTex2 = texture.getSubTexture(textureids[1]);

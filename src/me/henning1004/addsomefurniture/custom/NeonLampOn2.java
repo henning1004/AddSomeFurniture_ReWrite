@@ -14,7 +14,7 @@ public class NeonLampOn2 extends GenericCubeCustomBlock {
 	
 	@SuppressWarnings("deprecation")
 	public NeonLampOn2(Main plugin,String name, int[] textureids) {
-		super(plugin, name, Material.GLASS.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texOther, textureids));
+		super(plugin, name,  Material.GLASS.getId(), new GenericCubeBlockDesign(plugin, RegisterTextures.texOther, textureids));
 		this.setBlockDesign(new NeonLampDesign(plugin, textureids).rotate(90));
 		this.setHardness(4F);
 		this.setLightLevel(15);

@@ -40,7 +40,8 @@ public class Methods {
 				id == RegisterBlocks.irontable.getCustomId() ||
 				id == RegisterBlocks.obsidiantable.getCustomId() || 
 				id == RegisterBlocks.woodsimpletable.getCustomId() || 
-				id == RegisterBlocks.stonesimpletable.getCustomId() )
+				id == RegisterBlocks.stonesimpletable.getCustomId() ||
+				id == RegisterBlocks.coffeetable.getCustomId() )
 		{return true;} else {return false;}
 	}
 	

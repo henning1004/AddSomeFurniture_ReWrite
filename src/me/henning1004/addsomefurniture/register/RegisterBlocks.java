@@ -2,6 +2,7 @@ package me.henning1004.addsomefurniture.register;
 
 import me.henning1004.addsomefurniture.Main;
 import me.henning1004.addsomefurniture.custom.Barstool;
+import me.henning1004.addsomefurniture.custom.CoffeeTable;
 import me.henning1004.addsomefurniture.custom.FlowerBox;
 import me.henning1004.addsomefurniture.custom.Lamp;
 import me.henning1004.addsomefurniture.custom.LampOn;
@@ -79,6 +80,8 @@ public class RegisterBlocks {
 	public static FlowerBox flowerbox1E;
 	
 	public static QuestionMark qmark;
+	
+	public static CoffeeTable coffeetable;
 
 	
 
@@ -143,6 +146,8 @@ public class RegisterBlocks {
 		flowerbox1E = new FlowerBox(plugin, "Flower Box.e", new int[]{48,49,50,52,54,0}, "E");
 		
 		qmark = new QuestionMark(plugin, "Question mark", new int[]{65,65,64,64,64,64});
+		
+		coffeetable = new CoffeeTable(plugin, "CoffeeTable", new int[]{96,97,98,0,0,0});
 		
 		
 		

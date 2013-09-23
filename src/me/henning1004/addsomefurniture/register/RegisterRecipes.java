@@ -60,6 +60,8 @@ public class RegisterRecipes {
 
 	public static ItemStack recquestionmark;
 	
+	public static ItemStack reccoffeetable;
+	
 	public static void registerReipes(Main main) {
 		
 		recwoodtable = new SpoutItemStack(RegisterBlocks.woodtable, 1);
@@ -483,5 +485,12 @@ public class RegisterRecipes {
 		recipel.addIngredient(MaterialData.cactusGreen);
 		recipel.addIngredient(RegisterBlocks.neonlamp);
 		SpoutManager.getMaterialManager().registerSpoutRecipe(recipel);
+		
+		reccoffeetable = new SpoutItemStack(RegisterBlocks.coffeetable, 1);
+		recipe = new SpoutShapedRecipe(reccoffeetable);
+		recipe.shape("AAA", "B B", "B B");
+		recipe.setIngredient('A', MaterialData.glass);
+		recipe.setIngredient('B', MaterialData.ironIngot);
+		SpoutManager.getMaterialManager().registerSpoutRecipe(recipe);
 	}
 }

@@ -20,6 +20,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.getspout.spoutapi.block.SpoutBlock;
+import org.getspout.spoutapi.material.MaterialData;
 
 public class TableListener implements Listener
 {
@@ -32,7 +33,7 @@ public class TableListener implements Listener
 	
 	@SuppressWarnings("deprecation")
 	@EventHandler
-	public void onGoldtableClicked(PlayerInteractEvent event)
+	public void onTableClicked(PlayerInteractEvent event)
 	{
 		player = event.getPlayer();
 		block = (SpoutBlock) event.getClickedBlock();
@@ -109,6 +110,59 @@ public class TableListener implements Listener
 				return;
 			}
 		
-		}	
+		}
+		
+		if(event.hasBlock() && block.getCustomBlock() == RegisterBlocks.coffeetable  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
+			if(player.hasPermission("asf.action.coffeetable") || Configuration.confi.getString("NoPermissions").equals("true")){				
+				event.setCancelled(true);				
+				if(player.getInventory().contains(Material.WHEAT.getId(), 2) && player.getInventory().contains(MaterialData.cocoaBeans.getRawId(), 1)){					
+					loc = block.getLocation().add(0, 1, 0);
+					if(loc.getWorld().getBlockAt(loc).isEmpty()){
+					loc.getWorld().dropItemNaturally(loc, new ItemStack(Material.COOKIE, 10));
+					loc.getWorld().playEffect(loc, Effect.POTION_BREAK, 0 );
+					
+					HashMap<Integer, ? extends ItemStack> stacks1 = player.getInventory().all(Material.WHEAT);
+					Iterator<Integer> i1 = stacks1.keySet().iterator();
+					ItemStack stack1 = stacks1.get(i1.next());
+					int amount1 = stack1.getAmount();
+					if (amount1 == 2) {
+						player.getInventory().removeItem(stack1);
+						}
+					else {
+						stack1.setAmount(amount1 - 2);
+					}
+					HashMap<Integer, ? extends ItemStack> stacks2 = player.getInventory().all(351);
+					Iterator<Integer> i2 = stacks2.keySet().iterator();
+					ItemStack stack2 = stacks2.get(i2.next());
+					int amount2 = stack2.getAmount();
+					
+					if (amount2 == 1) {
+						player.getInventory().removeItem(stack2);
+						}
+					else {
+						stack2.setAmount(amount2 - 1);
+					}
+					player.updateInventory();
+					player.sendMessage(ChatColor.GOLD + "Yummy! Here are your cookies!");
+					return;
+					}
+					else{
+						player.sendMessage(ChatColor.RED + "Make sure there is nothing on top of the table!");	
+						return;
+					}
+				}
+				else{
+					player.sendMessage(ChatColor.GOLD + "To get some cookies you need: " + ChatColor.GREEN + "2 wheat and 1 cocoa beans.");
+					return;
+				}
+			
+			}
+			else{
+				event.setCancelled(true);
+				player.sendMessage(ChatColor.RED + "You are not allowed to use the coffeetable!");
+				return;
+			}
+		
+		}
 	}
 } 

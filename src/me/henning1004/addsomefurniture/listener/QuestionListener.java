@@ -31,7 +31,7 @@ public class QuestionListener implements Listener
 		block = (SpoutBlock) event.getClickedBlock();
 		
 		if(event.hasBlock() && (block.getCustomBlock() == RegisterBlocks.qmark) && (event.getAction() == Action.RIGHT_CLICK_BLOCK) && (player.getItemInHand() != null)) {
-			if(player.hasPermission("asf.action.qmark") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.qmark") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 				event.setCancelled(true);
 				player.sendMessage(new StringBuilder().append(ChatColor.GREEN).append("NAME: ").toString() + player.getItemInHand().getType().name() + " / ID: "+ player.getItemInHand().getTypeId() + ":" + player.getItemInHand().getDurability());
 			return;

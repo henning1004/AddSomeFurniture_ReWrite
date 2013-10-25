@@ -37,7 +37,7 @@ public class BlockRotationListener implements Listener
 		else{
 		if (Methods.isFlowerbox(block)) 
 		{
-			if (!player.hasPermission("asf.place.flower") || Configuration.confi.getString("NoPermissions").equals("false")){
+			if (!player.hasPermission("asf.place.flower") || !player.isOp() || Configuration.confi.getString("NoPermissions").equals("false")){
         		return;}
 			if (yaw >= 225 && yaw < 315) {
 				block.setCustomBlock(RegisterBlocks.flowerbox1E);
@@ -60,7 +60,7 @@ public class BlockRotationListener implements Listener
 		
 		if (Methods.isNeonlamp(block)) 
 		{
-			if (!player.hasPermission("asf.place.lamp") || Configuration.confi.getString("NoPermissions").equals("false")){
+			if (!player.hasPermission("asf.place.lamp") || !player.isOp() || Configuration.confi.getString("NoPermissions").equals("false")){
         		return;}
 			if ((yaw >= 225 && yaw < 315) || (yaw >= 45 && yaw < 135)) {
 				block.setCustomBlock(RegisterBlocks.neonlamp);
@@ -75,7 +75,7 @@ public class BlockRotationListener implements Listener
 		
 		if (Methods.isNeonlampred(block)) 
 		{
-			if (!player.hasPermission("asf.place.lamp") || Configuration.confi.getString("NoPermissions").equals("false")){
+			if (!player.hasPermission("asf.place.lamp") || !player.isOp() || Configuration.confi.getString("NoPermissions").equals("false")){
         		return;}
 			if ((yaw >= 225 && yaw < 315) || (yaw >= 45 && yaw < 135)) {
 				block.setCustomBlock(RegisterBlocks.neonlampred);
@@ -90,7 +90,7 @@ public class BlockRotationListener implements Listener
 		
 		if (Methods.isNeonlampgreen(block)) 
 		{
-			if (!player.hasPermission("asf.place.lamp") || Configuration.confi.getString("NoPermissions").equals("false")){
+			if (!player.hasPermission("asf.place.lamp") || !player.isOp() || Configuration.confi.getString("NoPermissions").equals("false")){
         		return;}
 			if ((yaw >= 225 && yaw < 315) || (yaw >= 45 && yaw < 135)) {
 				block.setCustomBlock(RegisterBlocks.neonlampgreen);
@@ -105,7 +105,7 @@ public class BlockRotationListener implements Listener
 		
 		if (Methods.isNeonlampblue(block)) 
 		{
-			if (!player.hasPermission("asf.place.lamp") || Configuration.confi.getString("NoPermissions").equals("false")){
+			if (!player.hasPermission("asf.place.lamp") || !player.isOp() || Configuration.confi.getString("NoPermissions").equals("false")){
         		return;}
 			if ((yaw >= 225 && yaw < 315) || (yaw >= 45 && yaw < 135)) {
 				block.setCustomBlock(RegisterBlocks.neonlampblue);

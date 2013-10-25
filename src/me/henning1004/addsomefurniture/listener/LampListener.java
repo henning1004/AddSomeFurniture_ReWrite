@@ -38,7 +38,7 @@ public class LampListener implements Listener
 		block = (SpoutBlock) event.getClickedBlock();
 		
 		if(event.hasBlock() && (block.getCustomBlock() == RegisterBlocks.lamp || block.getCustomBlock() == RegisterBlocks.lampon)  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 			if(block.getCustomBlock() == RegisterBlocks.lamp)
 			{
 				event.setCancelled(true);
@@ -61,7 +61,7 @@ public class LampListener implements Listener
 		
 		
 		if(event.hasBlock() && (block.getCustomBlock() == RegisterBlocks.neonlamp || block.getCustomBlock() == RegisterBlocks.neonlampon)  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 			if(block.getCustomBlock() == RegisterBlocks.neonlamp)
 			{
 				event.setCancelled(true);
@@ -83,7 +83,7 @@ public class LampListener implements Listener
 		}
 		
 		if(event.hasBlock() && (block.getCustomBlock() == RegisterBlocks.neonlamp2 || block.getCustomBlock() == RegisterBlocks.neonlampon2)  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 			if(block.getCustomBlock() == RegisterBlocks.neonlamp2)
 			{
 				event.setCancelled(true);
@@ -107,7 +107,7 @@ public class LampListener implements Listener
 		
 		
 		if(event.hasBlock() && (block.getCustomBlock() == RegisterBlocks.neonlampred || block.getCustomBlock() == RegisterBlocks.neonlamponred)  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 			if(block.getCustomBlock() == RegisterBlocks.neonlampred)
 			{
 				event.setCancelled(true);
@@ -129,7 +129,7 @@ public class LampListener implements Listener
 		}
 		
 		if(event.hasBlock() && (block.getCustomBlock() == RegisterBlocks.neonlampred2 || block.getCustomBlock() == RegisterBlocks.neonlamponred2)  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 			if(block.getCustomBlock() == RegisterBlocks.neonlampred2)
 			{
 				event.setCancelled(true);
@@ -151,7 +151,7 @@ public class LampListener implements Listener
 		}
 		
 		if(event.hasBlock() && (block.getCustomBlock() == RegisterBlocks.neonlampblue || block.getCustomBlock() == RegisterBlocks.neonlamponblue)  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 			if(block.getCustomBlock() == RegisterBlocks.neonlampblue)
 			{
 				event.setCancelled(true);
@@ -173,7 +173,7 @@ public class LampListener implements Listener
 		}
 		
 		if(event.hasBlock() && (block.getCustomBlock() == RegisterBlocks.neonlampblue2 || block.getCustomBlock() == RegisterBlocks.neonlamponblue2)  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 			if(block.getCustomBlock() == RegisterBlocks.neonlampblue2)
 			{
 				event.setCancelled(true);
@@ -195,7 +195,7 @@ public class LampListener implements Listener
 		}
 		
 		if(event.hasBlock() && (block.getCustomBlock() == RegisterBlocks.neonlampgreen  || block.getCustomBlock() == RegisterBlocks.neonlampongreen )  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 			if(block.getCustomBlock() == RegisterBlocks.neonlampgreen )
 			{
 				event.setCancelled(true);
@@ -217,7 +217,7 @@ public class LampListener implements Listener
 		}
 		
 		if(event.hasBlock() && (block.getCustomBlock() == RegisterBlocks.neonlampgreen2  || block.getCustomBlock() == RegisterBlocks.neonlampongreen2 )  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 			if(block.getCustomBlock() == RegisterBlocks.neonlampgreen2 )
 			{
 				event.setCancelled(true);

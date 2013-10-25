@@ -55,7 +55,7 @@ public class CraftListener implements Listener {
 	       //
 	        if (Methods.isTableID(craftedItemID))
 	        {
-	        	if (player.hasPermission("asf.craft.table") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.craft.table") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		return;}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to craft tables!");
@@ -65,7 +65,7 @@ public class CraftListener implements Listener {
 	        
 	        if (Methods.isChairID(craftedItemID))
 	        {
-	        	if (player.hasPermission("asf.craft.chair") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.craft.chair") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		return;}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to craft chairs!");
@@ -75,7 +75,7 @@ public class CraftListener implements Listener {
 	        
 	        if (Methods.isThroneID(craftedItemID))
 	        {
-	        	if (player.hasPermission("asf.craft.throne") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.craft.throne") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		return;}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to craft thrones!");
@@ -85,7 +85,7 @@ public class CraftListener implements Listener {
 	        
 	        if (Methods.isWorktopID(craftedItemID))
 	        {
-	        	if (player.hasPermission("asf.craft.worktop") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.craft.worktop") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		return;}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to craft worktops!");
@@ -95,7 +95,7 @@ public class CraftListener implements Listener {
 	        
 	        if (Methods.isFlowerboxID(craftedItemID))
 	        {
-	        	if (player.hasPermission("asf.craft.flowerbox") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.craft.flowerbox") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		return;}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to craft a flowerbox!");
@@ -106,7 +106,7 @@ public class CraftListener implements Listener {
 	        
 	        if (Methods.isLampID(craftedItemID))
 	        {
-	        	if (player.hasPermission("asf.craft.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.craft.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		return;}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to craft lamps!");
@@ -116,7 +116,7 @@ public class CraftListener implements Listener {
 	 
 	        if (craftedItemID == RegisterBlocks.tv.getCustomId())
 	        {
-	        	if (player.hasPermission("asf.craft.tv") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.craft.tv") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		return;}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to craft the tv!");
@@ -126,7 +126,7 @@ public class CraftListener implements Listener {
 	        
 	        if (craftedItemID == RegisterBlocks.qmark.getCustomId())
 	        {
-	        	if (player.hasPermission("asf.craft.qmark") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.craft.qmark") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		return;}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to craft the question mark!");

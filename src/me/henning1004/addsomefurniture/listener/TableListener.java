@@ -39,7 +39,7 @@ public class TableListener implements Listener
 		block = (SpoutBlock) event.getClickedBlock();
 		
 		if(event.hasBlock() && block.getCustomBlock() == RegisterBlocks.goldtable  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.goldtable") || Configuration.confi.getString("NoPermissions").equals("true")){				
+			if(player.hasPermission("asf.action.goldtable") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){				
 				event.setCancelled(true);				
 				if(player.getInventory().contains(Material.MILK_BUCKET.getId(), 1) && player.getInventory().contains(Material.APPLE.getId(), 1) && player.getInventory().contains(Material.WHEAT.getId(), 3) && player.getInventory().contains(Material.EGG.getId(), 1)){					
 					loc = block.getLocation().add(0, 1, 0);
@@ -113,7 +113,7 @@ public class TableListener implements Listener
 		}
 		
 		if(event.hasBlock() && block.getCustomBlock() == RegisterBlocks.coffeetable  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.coffeetable") || Configuration.confi.getString("NoPermissions").equals("true")){				
+			if(player.hasPermission("asf.action.coffeetable") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){				
 				event.setCancelled(true);				
 				if(player.getInventory().contains(Material.WHEAT.getId(), 2) && player.getInventory().contains(MaterialData.cocoaBeans.getRawId(), 1)){					
 					loc = block.getLocation().add(0, 1, 0);

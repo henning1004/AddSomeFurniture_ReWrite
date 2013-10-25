@@ -35,7 +35,7 @@ public class PlaceListener implements Listener {
 	       //
 	        if (Methods.isTable(block))
 	        {
-	        	if (player.hasPermission("asf.place.table") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.place.table") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place tables!");
@@ -45,7 +45,7 @@ public class PlaceListener implements Listener {
 	        
 	        if (Methods.isChair(block))
 	        {
-	        	if (player.hasPermission("asf.place.chair") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.place.chair") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place chairs!");
@@ -55,7 +55,7 @@ public class PlaceListener implements Listener {
 	        
 	        if (Methods.isThrone(block))
 	        {
-	        	if (player.hasPermission("asf.place.throne") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.place.throne") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place thrones!");
@@ -65,7 +65,7 @@ public class PlaceListener implements Listener {
 	        
 	        if (Methods.isWorktop(block))
 	        {
-	        	if (player.hasPermission("asf.place.worktop") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.place.worktop") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place worktops!");
@@ -75,7 +75,7 @@ public class PlaceListener implements Listener {
 	        
 	        if (Methods.isFlowerbox(block))
 	        {
-	        	if (player.hasPermission("asf.place.flowerbox") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.place.flowerbox") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place a flowerbox!");
@@ -85,7 +85,7 @@ public class PlaceListener implements Listener {
 	        
 	        if (Methods.isLamp(block))
 	        {
-	        	if (player.hasPermission("asf.place.lamp") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.place.lamp") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place lamps!");
@@ -95,7 +95,7 @@ public class PlaceListener implements Listener {
 	       
 	        if (block.getCustomBlock() == RegisterBlocks.tv)
 	        {
-	        	if (player.hasPermission("asf.place.tv") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.place.tv") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place the tv!");
@@ -105,7 +105,7 @@ public class PlaceListener implements Listener {
 	        
 	        if (block.getCustomBlock() == RegisterBlocks.qmark)
 	        {
-	        	if (player.hasPermission("asf.place.qmark") || Configuration.confi.getString("NoPermissions").equals("true")){
+	        	if (player.hasPermission("asf.place.qmark") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 	        		event.setBuild(true);}
 	        	else{
 	        		player.sendMessage(ChatColor.RED + "You are not allowed to place the question mark!");

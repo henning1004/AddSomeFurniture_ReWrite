@@ -30,7 +30,7 @@ public class WorktopListener implements Listener
 		block = (SpoutBlock) event.getClickedBlock();
 		
 		if(event.hasBlock() && Methods.isWorktop(block)  && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			if(player.hasPermission("asf.action.worktop") || Configuration.confi.getString("NoPermissions").equals("true")){
+			if(player.hasPermission("asf.action.worktop") || player.isOp() || Configuration.confi.getString("NoPermissions").equals("true")){
 				event.setCancelled(true);
 				player.openWorkbench(null, true);
 			return;
